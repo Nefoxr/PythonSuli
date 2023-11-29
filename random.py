@@ -1,13 +1,11 @@
 import random
 
-maganhangzok = ['a' 'e' 'i' 'o' 'u']  # magánhangzók
-massalhangzok = ['b' 'c' 'd' 'f' 'g' 'h' 'j' 'k' 'l' 'm' 'n' 'p' 'q' 'r' 's' 't' 'v' 'w' 'x' 'y' 'z']  # mássalhangzók
 
-szo = ''
-for i in range(5):
-    if i % 2 == 0:
-        szo += random.choice(maganhangzok)
-    else:
-        szo += random.choice(massalhangzok)
+#12 fő, 8-12, jegy:1-5
+jegyek=[]
+for i in range(12):
+    for k in range(random.randrange(8,13)):
+        jegy=random.randrange(1,6)
+        egyDiak.append(jegy)
 
-print(szo)
+    jegyek.append(egyDiak)

@@ -27,7 +27,7 @@ def Szamjegyek(list):
             szam = str(elem)
             if szam[0]==str(i+1):
                 Szamjegyek.append(szam)
-        print("Ennyi darab",i+1,"-es/-as/-os számmal kezdődő számjegy van a listában:",len(Szamjegyek))
+        print("Ennyi darab",i+1,"-es/-as/-os számmal kezdődő szám van a listában:",len(Szamjegyek))
 
 
 szamok = []
