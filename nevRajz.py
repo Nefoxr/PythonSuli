@@ -44,13 +44,13 @@ adam=[
 
 adam2=[]
 for e in adam:
-        e=transzformaciok.nagyit(e, 10)
+        e=transzformaciok.nagyit(e, 2)
         e=transzformaciok.eltol(e, 100, 100)
         e=transzformaciok.forgat(e,90)
         
         adam2.append(e)
 
-pepa2=transzformaciok.forgat(pepa2,-90)
+adam2=transzformaciok.forgat(adam2,0)
 
 print(adam2)
 
