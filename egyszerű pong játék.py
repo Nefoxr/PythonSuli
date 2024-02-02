@@ -45,6 +45,8 @@ labdaSize=50
 labdaColor="red"
 red,green,blue=0,0,0
 
+labdaLista=[]
+labdaListaHossz=100
 
 while True:
     labdaColor,red,green,blue=atmenetColor(red, green, blue)
@@ -59,11 +61,15 @@ while True:
         labdaSpeed[1]*=-1
         #labdaColor=randomColor()
 
-    canvas.create_oval(labdaPos[0],
+    labdaLista.append(canvas.create_oval(labdaPos[0],
                        labdaPos[1], 
                        labdaPos[0]+labdaSize,
                        labdaPos[1]+labdaSize,
-                        fill=labdaColor,outline="black")
+                        fill=labdaColor,outline="black"))
+    
+    if len(labdaLista)>labdaListaHossz:
+        canvas.delete(labdaLista[0])
+        labdaLista.pop(0)
     canvas.update()
         
 
